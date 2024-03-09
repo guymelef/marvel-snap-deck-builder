@@ -1,6 +1,6 @@
 tag sorter
-	prop selectedSortProperty
-	prop selectedSortOrder
+	prop selectedSortProperty = ""
+	prop selectedSortOrder = ""
 	
 	css .sorter fs:sm d:flex jc:center ai:center gap:5px mt:8px
 		select width:100px

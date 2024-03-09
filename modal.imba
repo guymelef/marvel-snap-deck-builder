@@ -1,5 +1,5 @@
 tag deck-builder-modal
-	prop deckCode
+	prop deckCode = ""
 	
 	def importDeck
 		emit('deckCodeImported', deckCode)

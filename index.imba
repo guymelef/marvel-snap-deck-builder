@@ -1,22 +1,23 @@
 import { cards } from "./data/cards.imba"
-import "./cards-view"
-import "./deck-view"
-import "./filters"
-import "./sorter"
-import "./modal"
+import "./cards-view.imba"
+import "./deck-view.imba"
+import "./filters.imba"
+import "./sorter.imba"
+import "./modal.imba"
 
 const CARDS = cards.filter do(card) card.released and card.type is "character"
 
 global css
-	html, body h:100vh m:0 bgc:gray6 d:flex ai:center jc:center
-	.deck-generator-controls d:flex gap:10px jc:center ai:center mt:16px
+	html, body h:100vh m:0 bgc:gray6 d:flex ai:center jc:center ff:"Roboto", san-serif
+	button, select, input bd:none
+	.deck-generator-controls d:flex gap:10px jc:center ai:center mt:12px
 		input p:3px 8px bgc:azure c:#010b13
 		input::placeholder c:#aaa9ad
 		.controls-div d:flex gap:8px
 		.btn-control all:unset d:flex
 			svg filter:drop-shadow(2px 1px)
 			@hover cursor:pointer
-		.btn-control@hover, .btn-control@focus scale:1.1
+		.btn-control@hover, .btn-control@focus transform:scale(1.1)
 	.toast-msg pos:fixed x:8px y:-18px bgc:#010b13 zi:1 p:5px 15px fw:bold fs:sm
 	.sr-only bd:0 clip:rect(0 0 0 0) w:1px h:auto m:0 of:hidden p:0 pos:absolute white-space: nowrap
 

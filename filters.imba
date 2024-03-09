@@ -2,10 +2,10 @@ tag filters
 	prop abilities = ["On Reveal", "Ongoing", "Discard", "Move", "Destroy", "No Ability", "Others"]
 	prop energyValues = ['0', '1', '2', '3', '4', '5', '6+']
 	prop powerValues = ['1-', '2', '3', '4', '5', '6+']
-	prop selectedAbility
-	prop selectedEnergy
-	prop selectedPower
-	prop selectedSeries
+	prop selectedAbility = ""
+	prop selectedEnergy = ""
+	prop selectedPower = ""
+	prop selectedSeries = ""
 	
 	css .filter fs:sm d:flex fw:700 jc:center ai:center
 		label ta:center
