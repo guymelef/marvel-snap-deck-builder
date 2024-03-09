@@ -1,9 +1,9 @@
 import { cards } from "./data/cards.imba"
-import "./cards-view.imba"
-import "./deck-view.imba"
-import "./filters.imba"
-import "./sorter.imba"
-import "./modal.imba"
+import "./tags/cards-view.imba"
+import "./tags/deck-view.imba"
+import "./tags/filters.imba"
+import "./tags/sorter.imba"
+import "./tags/modal.imba"
 
 const CARDS = cards.filter do(card) card.released and card.type is "character"
 
