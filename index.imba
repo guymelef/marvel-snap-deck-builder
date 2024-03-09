@@ -190,6 +190,7 @@ tag App
 		
 		try
 			let code = event.detail.trim()
+			return unless code
 			code = code.match(/\n[\w=\+\/^_]+\n/) or code
 			const decodedDeckCode = window.atob(code)
 			let cards = JSON.parse(decodedDeckCode).Cards
