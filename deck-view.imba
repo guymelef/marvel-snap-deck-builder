@@ -5,7 +5,7 @@ tag deck-view
 		emit('removeCardFromDeck', card.name) if card
 
 	css .deck-view p:5px 0 bgc:blue8
-		&.complete animation: complete .5s ease forwards
+		&.complete animation:complete .5s ease forwards
 		img w:70px
 			&.card-added@hover cursor:pointer scale:1.15
 		@keyframes complete

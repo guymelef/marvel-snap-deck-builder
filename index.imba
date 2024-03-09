@@ -8,7 +8,8 @@ import "./modal.imba"
 const CARDS = cards.filter do(card) card.released and card.type is "character"
 
 global css
-	html, body h:100vh m:0 bgc:gray6 d:flex ai:center jc:center ff:"Roboto", san-serif
+	html, body m:0 ff:'Roboto', sans-serif
+	body d:flex jc:center bgc:gray6
 	button, select, input bd:none
 	.deck-generator-controls d:flex gap:10px jc:center ai:center mt:12px
 		input p:3px 8px bgc:azure c:#010b13
