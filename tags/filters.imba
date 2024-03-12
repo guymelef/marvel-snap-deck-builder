@@ -21,28 +21,28 @@ tag filters
 		<self>
 			<div.filter>
 				<label for="card-ability">
-					<span.span-ability> "Ability"
+					<span> "Ability"
 					<select#card-ability bind=selectedAbility @change=emit('filterBy', {prop:'ability', value:selectedAbility})>
 						<option> ""
 						for ability in abilities
 							<option value=ability> ability
 							
 				<label for="card-energy"> 
-					<span.span-energy> "Energy"
+					<span> "Energy"
 					<select#card-energy bind=selectedEnergy @change=emit('filterBy', {prop:'energy', value:selectedEnergy})>
 						<option> ""
 						for value in energyValues
 							<option value=value> value
 							
 				<label for="card-power">
-					<span.span-power> "Power"
+					<span> "Power"
 					<select#card-power bind=selectedPower @change=emit('filterBy', {prop:'power', value:selectedPower})>
 						<option> ""
 						for value in powerValues
 							<option value=value> value
 								
 				<label for="card-series">
-					<span.span-series> "Series"
+					<span> "Series"
 					<select#card-series bind=selectedSeries @change=emit('filterBy',  {prop:'series', value:selectedSeries})>
 						<option> ""
 						<option value="Season Pass"> "Season Pass"
