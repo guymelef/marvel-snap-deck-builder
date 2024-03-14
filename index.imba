@@ -56,8 +56,7 @@ tag App
 			if selectedKeyword
 				cardPool = cardPool.filter do(card) card.tags.includes(selectedAbility)
 			else
-				for card in CARDS
-					cardPool.push(card) if card.tags.includes(selectedAbility)
+				cardPool = CARDS.filter do(card) card.tags.includes(selectedAbility)
 		
 		if selectedEnergy
 			let foundCards = []
